@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../charts/chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SIP Calculator</h1>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="swp.html">SWP Calculator</a>
+                <a href="lumpsum.html">Lump Sum Calculator</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <form id="sip-form">
+                    <div class="form-group">
+                        <label for="sip-amount">Monthly Investment:</label>
+                        <input type="number" id="sip-amount" placeholder="₹" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sip-rate">Annual Interest Rate (%):</label>
+                        <input type="number" id="sip-rate" step="0.1" placeholder="%" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sip-months">Investment Period (months):</label>
+                        <input type="number" id="sip-months" placeholder="Months" required>
+                    </div>
+                    <button type="submit">Calculate</button>
+                </form>
+                <div id="sip-result" class="result"></div>
+                <canvas id="sip-chart"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
